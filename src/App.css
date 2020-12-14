@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(99, 23, 23);
 }
 
 .App-logo {
@@ -14,18 +18,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +33,209 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  background-color: rgb(8, 2, 2);
+
+  margin: 0;
+}
+
+.imagecontainer {
+  position: absolute;
+  top: 10vh;
+  left: 1.5vw;
+  z-index: 1;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 12.5vw;
+  overflow: hidden;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 15px 15px 15px rgba(46, 54, 68, 0.03);
+  border: solid 2px transparent;
+  backdrop-filter: blur(40px);
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.second_imagecontainer {
+  position: absolute;
+  top: 5vh;
+  margin-left: 30vw;
+  z-index: 2;
+  width: 30vw;
+  height: 20vw;
+  border-radius: 12.5vw;
+  overflow: hidden;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 15px 15px 15px rgba(46, 54, 68, 0.03);
+  border: solid 2px transparent;
+  backdrop-filter: blur(40px);
+}
+
+.second_image {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2em;
+  border-radius: 2em;
+  position: absolute;
+  top: 2.5vh;
+  left: 20vw;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+  background-clip: padding-box;
+  box-shadow: 20px 20px 20px rgba(46, 54, 68, 0.03);
+}
+.projects {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2em;
+  border-radius: 2em;
+  position: absolute;
+  bottom: 2.5vh;
+  left: 5vw;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+  background-clip: padding-box;
+  box-shadow: 20px 20px 20px rgba(46, 54, 68, 0.03);
+}
+.about_me {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2em;
+  border-radius: 2em;
+  position: absolute;
+  top: 10vh;
+  right: 10vw;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+  background-clip: padding-box;
+  box-shadow: 20px 20px 20px rgba(46, 54, 68, 0.03);
+}
+.contact {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2em;
+  border-radius: 2em;
+  position: absolute;
+  bottom: 10vh;
+  right: 5vw;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+  background-clip: padding-box;
+  box-shadow: 20px 20px 20px rgba(46, 54, 68, 0.03);
+}
+
+.header_container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2em;
+  border-radius: 2em;
+  position: absolute;
+  top: 2.5vh;
+  left: 2.5vw;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+  background-clip: padding-box;
+  box-shadow: 20px 20px 20px rgba(46, 54, 68, 0.03);
+}
+
+.inside_container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2em;
+  border-radius: 2em;
+  position: "absolute";
+  margin-top: 20vh;
+  width: 60vw;
+  height: 50vh;
+  opacity: 0.7;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+  background-clip: padding-box;
+  box-shadow: 20px 20px 20px rgba(46, 54, 68, 0.03);
+  overflow-y: scroll;
+}
+
+.button-hover {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  box-shadow: 20px 20px 20px rgba(46, 54, 68, 0.03);
+
+  opacity: 0.4;
+}
+
+.button-hover:hover {
+  opacity: 1;
+}
+
+h2 {
+  margin: 0;
+  font-family: "JetBrainsFont";
+  color: white;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin: 0;
+  font-family: "JetBrainsFont";
+  color: white;
+  margin-top: 20px;
+  font-style: italic;
+  z-index: 2;
+  opacity: 1;
+}
+
+h4 {
+  margin: 0;
+  font-family: "JetBrainsFont";
+  color: white;
+  margin-top: 15px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+h5 {
+  margin: 0;
+  font-family: "JetBrainsFont";
+  color: grey;
+  margin-top: 15px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.description {
+  margin-left: 20px;
+}
+
+.subseq {
+  margin-left: 10px;
+  font-size: 20px;
+  color: "grey";
+}
+
+p {
+  margin: 0;
+  font-family: "JetBrainsFont";
+  color: white;
+}
+
+h1 {
+  font-size: 4em;
+  clip-path: inset(0 0 0 0);
+  font-family: "JetBrainsFont";
+}
+
+.seq {
+  padding-top: 5px;
 }
