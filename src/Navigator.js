@@ -99,18 +99,22 @@ export default function Navigator() {
                     onDrag={(ev) => console.log("drag @ ", ev)}
                   >
                     <Canvas
-                      style={{ width: "100%", height: "100%", position: "fixed", backgroundColor: 'transparent' }}
+                      style={{ width: "100%", height: "100%", position: "fixed", backgroundColor: 'white', zIndex: -1 }}
                       gl={{ alpha: false, antialias: false, logarithmicDepthBuffer: true }}
                       camera={{
                         fov: 75,
                         position: [0, 0, 70],
                       }}
                       onCreated={({ gl }) => {
-                        gl.setClearColor({color: 'black', alpha: 0.1}
+                        gl.setClearColor({color: 'white', alpha: 0.6}
+                
                         );
                         // gl.toneMapping = THREE.ACESFilmicToneMapping
                         // gl.outputEncoding = THREE.sRGBEncoding
                       }}
+                        // gl.toneMapping = THREE.ACESFilmicToneMapping
+                        // gl.outputEncoding = THREE.sRGBEncoding
+                   
                       onPointerUp={() => click(false)}
                       onPointerDown={() => click(true)}
                       // onPointerOver={() => hover(true)}
@@ -125,7 +129,7 @@ export default function Navigator() {
                         </mesh>
                       </pointLight> */}
                       {/* <fog attach="fog" args={['black', 100, 120]} /> */}
-                      <pointLight position={[0, 100, -100]} intensity={5} color="#00f" />
+                      <pointLight position={[0, 100, -100]} intensity={10}  />
                       <pointLight position={[0, 50, 0]} intensity={0.3} color={0xe30100} />
                       <pointLight ref={light} distance={30} intensity={3} color={0xd90200}>
                         <mesh>
